@@ -28,7 +28,7 @@ def process_cell(args):
 
 if __name__ == "__main__":
     # Usage: python make.py <image> <split> <variance> <circle_variance> [output_width]
-    im = Image.open(sys.argv[1])
+    im = Image.open(sys.argv[1]).convert('RGB')
     split = int(sys.argv[2])
     variance = float(sys.argv[3])
     circle_variance = float(sys.argv[4])
